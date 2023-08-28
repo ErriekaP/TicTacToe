@@ -1,0 +1,73 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    
+    font-family: 'Indie Flower', cursive;
+    background-color: #f1e29d63;
+    background-size: 40px 40px;
+    background-image: conic-gradient(from 90deg at 1px 1px,#0000 90deg,#e4d7d7 0) 
+
+}
+h1 {
+    font-size: 50px;
+    text-transform: uppercase;
+    color: black;
+
+}
+
+.container {
+    padding: 40px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+
+#gameboard {
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+.box {
+    height: 100px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 120px;
+    border-right: 4px solid rgba(66, 121, 223, 0.767);
+    border-bottom: 4px solid rgba(66, 121, 223, 0.767);
+
+    border-top-left-radius: 255px 15px;
+    border-top-right-radius: 15px 225px;
+    border-bottom-right-radius: 225px 15px;
+    border-bottom-left-radius:15px 255px;
+
+   
+}
+.box:nth-child(3n) {
+    border-right: none;
+}
+.box:nth-child(6) ~ .box {
+    border-bottom: none;
+} 
+
+
+.playerX {
+    color: #e00b2f;
+}
+
+.playerO {
+    color: #29539c;
+
+}
+

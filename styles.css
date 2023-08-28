@@ -5,20 +5,21 @@
 }
 
 
-body {
-    
+body { 
     font-family: 'Indie Flower', cursive;
     background-color: #f1e29d63;
     background-size: 40px 40px;
-    background-image: conic-gradient(from 90deg at 1px 1px,#0000 90deg,#e4d7d7 0) 
-
+    background-image: conic-gradient(from 90deg at 1px 1px,#0000 90deg,#e4d7d7 0);
+   
 }
+
 h1 {
     font-size: 50px;
     text-transform: uppercase;
     color: black;
 
 }
+
 
 .container {
     padding: 40px;
@@ -35,7 +36,7 @@ h1 {
     width: 300px;
     display: flex;
     flex-wrap: wrap;
-    margin-top: 30px;
+    margin-top: 10px;
 }
 .box {
     height: 100px;
@@ -68,6 +69,33 @@ h1 {
 
 .playerO {
     color: #29539c;
+
+}
+
+button {
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: white;
+    color: #333;
+    font-size: 14px;
+    transition: 200ms transform;
+    font-weight: 600;
+    margin-top: 40px;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: translateY(-2px);
+}
+
+.relative {
+    position:relative;
+
+}
+
+.score {
+    float:left;
+    margin-right: 20px;
 
 }
 

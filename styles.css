@@ -4,6 +4,9 @@
     box-sizing: border-box;
 }
 
+:root{
+    --winning-blocks: #2d414b;
+}
 
 body { 
     font-family: 'Indie Flower', cursive;
@@ -23,7 +26,7 @@ h1 {
 
 .container {
     padding: 40px;
-    height: 100vh;
+    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -33,12 +36,13 @@ h1 {
 }
 
 #gameboard {
-    width: 300px;
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+    cursor: pointer;
+    position: relative;
 }
-.box {
+.tile {
     height: 100px;
     width: 100px;
     display: flex;
@@ -55,10 +59,10 @@ h1 {
 
    
 }
-.box:nth-child(3n) {
+.tile:nth-child(3n) {
     border-right: none;
 }
-.box:nth-child(6) ~ .box {
+.tile:nth-child(6) ~ .box {
     border-bottom: none;
 } 
 
@@ -99,3 +103,55 @@ button:hover {
 
 }
 
+.strike {
+    position: absolute;
+    background-color: darkred;
+
+  }
+
+.strike-row-1 {
+    width: 100%;
+    height: 4px;
+    top: 15%;
+ 
+  }
+  .strike-row-2 {
+    width: 100%;
+    height: 4px;
+    top: 48%;
+  }
+  .strike-row-3 {
+    width: 100%;
+    height: 4px;
+    top: 83%;
+  }
+  .strike-column-1 {
+    height: 100%;
+    width: 4px;
+    left: 15%;
+  }
+  .strike-column-2 {
+    height: 100%;
+    width: 4px;
+    left: 48%;
+  }
+  .strike-column-3 {
+    height: 100%;
+    width: 4px;
+    left: 83%;
+  }
+  .strike-diagonal-1 {
+    width: 90%;
+    height: 4px;
+    top: 50%;
+    left: 5%;
+    transform: skewY(45deg);
+  }
+  .strike-diagonal-2 {
+    width: 90%;
+    height: 4px;
+    top: 50%;
+    left: 5%;
+    transform: skewY(-45deg);
+  }
+  

@@ -128,8 +128,8 @@ const resetBoard = () => {
         });
     }
 
-    tiles.forEach( (tile, index) => {
-        tile.addEventListener('click', () => userAction(tile, index));
-    });
+tiles.forEach( (tile, index) => {
+    tile.addEventListener('click', () => userAction(tile, index));
+});
 
-    resetButton.addEventListener('click', resetBoard);
+resetButton.addEventListener('click', resetBoard);

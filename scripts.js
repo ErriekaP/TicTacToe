@@ -30,6 +30,10 @@ const winningCombinations = [
 function handleResultValidation() {
     let roundWon = false;
         for (const winningCombination of winningCombinations) {
+            //const winCondition = winningCombinations[i];
+            //const a = board[winCondition[0]];
+            //const b = board[winCondition[1]];
+            //const c = board[winCondition[2]];
             const { combo, strikeClass } = winningCombination;
             const a = board[combo[0]-1];
             const b = board[combo[1]-1];
